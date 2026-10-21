@@ -1,0 +1,242 @@
+[
+  {
+    "id": "P001",
+    "month": "2026-01",
+    "product": "BioKit A",
+    "region": "Norte",
+    "units": 65,
+    "returned": 0,
+    "price": 150,
+    "cost": 142
+  },
+  {
+    "id": "P002",
+    "month": "2026-01",
+    "product": "BioKit A",
+    "region": "Sur",
+    "units": 81,
+    "returned": 3,
+    "price": 150,
+    "cost": 142
+  },
+  {
+    "id": "P003",
+    "month": "2026-01",
+    "product": "Enzima B",
+    "region": "Norte",
+    "units": 28,
+    "returned": 1,
+    "price": 90,
+    "cost": 38
+  },
+  {
+    "id": "P004",
+    "month": "2026-01",
+    "product": "Enzima B",
+    "region": "Sur",
+    "units": 24,
+    "returned": 3,
+    "price": 90,
+    "cost": 38
+  },
+  {
+    "id": "P005",
+    "month": "2026-01",
+    "product": "Reactivo C",
+    "region": "Norte",
+    "units": 33,
+    "returned": 1,
+    "price": 60,
+    "cost": 20
+  },
+  {
+    "id": "P006",
+    "month": "2026-01",
+    "product": "Reactivo C",
+    "region": "Sur",
+    "units": 33,
+    "returned": 2,
+    "price": 60,
+    "cost": 20
+  },
+  {
+    "id": "P007",
+    "month": "2026-02",
+    "product": "BioKit A",
+    "region": "Norte",
+    "units": 74,
+    "returned": 2,
+    "price": 150,
+    "cost": 142
+  },
+  {
+    "id": "P008",
+    "month": "2026-02",
+    "product": "BioKit A",
+    "region": "Sur",
+    "units": 66,
+    "returned": 2,
+    "price": 150,
+    "cost": 142
+  },
+  {
+    "id": "P009",
+    "month": "2026-02",
+    "product": "Enzima B",
+    "region": "Norte",
+    "units": 21,
+    "returned": 2,
+    "price": 90,
+    "cost": 38
+  },
+  {
+    "id": "P010",
+    "month": "2026-02",
+    "product": "Enzima B",
+    "region": "Sur",
+    "units": 34,
+    "returned": 1,
+    "price": 90,
+    "cost": 38
+  },
+  {
+    "id": "P011",
+    "month": "2026-02",
+    "product": "Reactivo C",
+    "region": "Norte",
+    "units": 25,
+    "returned": 1,
+    "price": 60,
+    "cost": 20
+  },
+  {
+    "id": "P012",
+    "month": "2026-02",
+    "product": "Reactivo C",
+    "region": "Sur",
+    "units": 25,
+    "returned": 1,
+    "price": 60,
+    "cost": 20
+  },
+  {
+    "id": "P013",
+    "month": "2026-03",
+    "product": "BioKit A",
+    "region": "Norte",
+    "units": 83,
+    "returned": 2,
+    "price": 150,
+    "cost": 142
+  },
+  {
+    "id": "P014",
+    "month": "2026-03",
+    "product": "BioKit A",
+    "region": "Sur",
+    "units": 78,
+    "returned": 4,
+    "price": 150,
+    "cost": 142
+  },
+  {
+    "id": "P015",
+    "month": "2026-03",
+    "product": "Enzima B",
+    "region": "Norte",
+    "units": 24,
+    "returned": 3,
+    "price": 90,
+    "cost": 38
+  },
+  {
+    "id": "P016",
+    "month": "2026-03",
+    "product": "Enzima B",
+    "region": "Sur",
+    "units": 24,
+    "returned": 2,
+    "price": 90,
+    "cost": 38
+  },
+  {
+    "id": "P017",
+    "month": "2026-03",
+    "product": "Reactivo C",
+    "region": "Norte",
+    "units": 26,
+    "returned": 0,
+    "price": 60,
+    "cost": 20
+  },
+  {
+    "id": "P018",
+    "month": "2026-03",
+    "product": "Reactivo C",
+    "region": "Sur",
+    "units": 28,
+    "returned": 3,
+    "price": 60,
+    "cost": 20
+  },
+  {
+    "id": "P019",
+    "month": "2026-04",
+    "product": "BioKit A",
+    "region": "Norte",
+    "units": 67,
+    "returned": 3,
+    "price": 150,
+    "cost": 142
+  },
+  {
+    "id": "P020",
+    "month": "2026-04",
+    "product": "BioKit A",
+    "region": "Sur",
+    "units": 77,
+    "returned": 2,
+    "price": 150,
+    "cost": 142
+  },
+  {
+    "id": "P021",
+    "month": "2026-04",
+    "product": "Enzima B",
+    "region": "Norte",
+    "units": 36,
+    "returned": 4,
+    "price": 90,
+    "cost": 38
+  },
+  {
+    "id": "P022",
+    "month": "2026-04",
+    "product": "Enzima B",
+    "region": "Sur",
+    "units": 34,
+    "returned": 2,
+    "price": 90,
+    "cost": 38
+  },
+  {
+    "id": "P023",
+    "month": "2026-04",
+    "product": "Reactivo C",
+    "region": "Norte",
+    "units": 26,
+    "returned": 4,
+    "price": 60,
+    "cost": 20
+  },
+  {
+    "id": "P024",
+    "month": "2026-04",
+    "product": "Reactivo C",
+    "region": "Sur",
+    "units": 27,
+    "returned": 4,
+    "price": 60,
+    "cost": 20
+  }
+]

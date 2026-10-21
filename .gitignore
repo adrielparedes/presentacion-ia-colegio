@@ -1,0 +1,25 @@
+# Dependencias, compilaciones y cachés
+node_modules/
+.next/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+/nexobio/next-env.d.ts
+
+# Resultados locales de pruebas y capturas regenerables
+coverage/
+playwright-report/
+test-results/
+/verificacion/
+
+# Configuración local y credenciales
+.env*
+.npmrc
+*.pem
+*.key
+.idea/
+.vscode/
+
+# Archivos del sistema y logs
+.DS_Store
+*.log

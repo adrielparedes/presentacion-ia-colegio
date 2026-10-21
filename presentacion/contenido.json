@@ -1,0 +1,413 @@
+[
+  {
+    "tag": "IA EN EL TRABAJO / MARISTA",
+    "title": "De hablar con la IA<br>a trabajar con ella.",
+    "lead": "Del prompt al sistema que entrega resultados.",
+    "cards": [],
+    "code": null,
+    "note": "[0:00–1:00] Abrir con una pregunta: ¿Quién usó IA esta semana? ¿Y quién chequeó lo que le respondió? Aclarar que no vamos a competir por escribir el mejor prompt ni a juzgar código. Veremos cómo se convierte una petición en un producto útil y revisable.",
+    "kind": "hero"
+  },
+  {
+    "tag": "01 / QUIÉN SOY",
+    "title": "Antes de empezar,<br>una persona detrás del teclado.",
+    "lead": "<span data-profile=\"nombre\">[Tu nombre]</span> · <span data-profile=\"rol\">[Tu rol]</span>",
+    "cards": [
+      [
+        "Mi recorrido",
+        "<span data-profile=\"trayectoria\">[Dos frases sobre tu trayectoria]</span>"
+      ],
+      [
+        "Mi día a día",
+        "<span data-profile=\"diaADia\">[Qué hacés en tu trabajo actual]</span>"
+      ],
+      [
+        "Por qué estoy aquí",
+        "Para mostrarles cómo es trabajar con IA, no solo hablar de ella."
+      ]
+    ],
+    "code": null,
+    "note": "[1:00–3:00] La identidad y la experiencia se completan en perfil.js. Presentarse en 60–90 segundos: nombre, rol y recorrido. En Mi día a día, explicar el trabajo en Workbenches / Notebooks de OpenShift AI: diseñar, revisar e implementar arquitectura para uno o varios equipos, buscando soluciones a largo plazo. Toda esta información queda integrada acá, sin otra diapositiva biográfica. Distinguir trabajar en un producto de IA de usar IA para trabajar: no atribuirse usos, resultados ni cifras de productividad no confirmados. No es una declaración oficial de Red Hat. Cerrar con por qué te interesa mostrarles estas herramientas y pasar a qué significa usarlas en una empresa.",
+    "kind": ""
+  },
+  {
+    "tag": "02 / LA PREGUNTA",
+    "title": "¿Qué significa<br>«usar IA en una empresa»?",
+    "lead": "No solo calcular: analizar información y explorar soluciones.",
+    "cards": [
+      [
+        "Fuentes → comprensión",
+        "Cruzar datos, documentos y reportes. Identificar relaciones, contradicciones y qué información falta."
+      ],
+      [
+        "Evidencia → alternativas",
+        "Proponer soluciones y comparar sus ventajas, riesgos y supuestos para decidir con evidencia."
+      ],
+      [
+        "Necesidad → producto",
+        "Construir y modificar herramientas que otras personas puedan usar."
+      ]
+    ],
+    "code": null,
+    "note": "[3:00–5:00] Distinguir cálculo de análisis: para calcular un KPI o actualizar un dashboard, muchas veces alcanza con un script de Python. El aporte que buscamos de la IA es trabajar con fuentes distintas, relacionar información, proponer explicaciones y explorar soluciones alternativas ante un problema que no tiene una receta cerrada. Ejemplo hipotético: cruzar ventas, reclamos y reportes de laboratorio para proponer qué investigar y comparar posibles acciones. Un patrón no demuestra una causa; cada propuesta necesita fuentes, supuestos explícitos y comprobaciones. Los cálculos siguen en código reproducible y la decisión es de la persona responsable. Estas son posibilidades de uso, no garantías de razonamiento correcto ni promesas de automatización total. Preguntar qué información necesitarían para elegir entre dos soluciones.",
+    "kind": ""
+  },
+  {
+    "tag": "03 / CÓMO CAMBIÓ EL FOCO",
+    "title": "Del pedido al sistema<br>que trabaja y se comprueba.",
+    "lead": "Cinco términos para investigar. Se combinan; no se reemplazan.",
+    "cards": [],
+    "code": "Prompt Engineering   → cómo formulamos el pedido\nContext Engineering  → qué información tiene el modelo\nAI Agents            → modelos que usan herramientas y actúan\nHarness Engineering  → entorno, permisos y comprobaciones\nLoop Engineering     → ciclos de trabajo guiados por objetivos",
+    "note": "[6:00–7:00] Presentar la ampliación del foco en los últimos años: de redactar pedidos a preparar contexto, habilitar acciones y diseñar sistemas verificables. No es una cronología rígida ni una sucesión de tecnologías que se vuelven obsoletas; son conceptos relacionados que conviven. AI Agents nombra un tipo de sistema, no otra disciplina de engineering. Los nombres quedan en inglés para que puedan buscarlos. Loop Engineering es un término emergente cuyo alcance varía: aquí se usa para diseñar ciclos orientados a un objetivo, con estado, feedback, condiciones de parada y revisión humana. Las fuentes y los términos están en fuentes.md y ALUMNOS.md. Una respuesta no es un resultado: el producto debe poder usarse y comprobarse.",
+    "kind": ""
+  },
+  {
+    "tag": "04 / PROMPT ENGINEERING",
+    "title": "Prompt Engineering.",
+    "lead": "Objetivo + contexto + formato + restricciones.",
+    "cards": [],
+    "code": "Necesito un panel para ventas.\nMostrá ingresos y margen por producto.\nUsá estos datos y explicá tus supuestos.",
+    "note": "[7:00–8:00] Un buen prompt evita ambigüedad. No ridiculizarlo: forma parte del trabajo. Pero un texto no concede acceso a archivos, no ejecuta pruebas y no garantiza que el agente respete las restricciones.",
+    "kind": ""
+  },
+  {
+    "tag": "05 / HARNESS ENGINEERING",
+    "title": "Harness Engineering.",
+    "lead": "Combinar propuestas probabilísticas con cálculos y comprobaciones deterministas.",
+    "cards": [
+      [
+        "El modelo propone (probabilístico)",
+        "Genera propuestas a partir del contexto. Una respuesta probable o convincente no es necesariamente correcta."
+      ],
+      [
+        "El código calcula (determinístico)",
+        "Con los mismos datos y reglas, el mismo cálculo. Fórmulas y validaciones explícitas, no cuentas improvisadas por el modelo."
+      ],
+      [
+        "Las pruebas contrastan (determinísticas)",
+        "Comparan con resultados esperados. Permisos y revisión humana completan el control: pasar pruebas no garantiza ausencia de errores."
+      ]
+    ],
+    "code": null,
+    "note": "[8:00–10:00] Harness significa aquí el sistema que rodea al modelo. Explicar con la analogía de incorporar a alguien a un equipo: necesita información, herramientas y saber cuándo pedir ayuda. El término se usa en distintos sentidos; esta es una definición operativa para la charla. OpenAI describe este enfoque en su artículo Harness engineering. No es una profesión que sustituya automáticamente a otra. Explicar el equilibrio: el modelo es probabilístico; los cálculos y las comprobaciones controladas pueden ser deterministas. Determinista significa reproducible bajo las mismas entradas y condiciones, no necesariamente correcto: una fórmula mal definida también repite el mismo error. En ventas, el modelo puede construir el panel, pero el código calcula el margen y las pruebas lo contrastan con ejemplos esperados. En laboratorio, el código aplica los umbrales del protocolo educativo; el modelo no decide si un control fallido se puede ignorar. El harness aporta contexto, herramientas, límites y feedback. La persona define criterios y decide si la evidencia alcanza.",
+    "kind": ""
+  },
+  {
+    "tag": "06 / LOOP ENGINEERING",
+    "title": "Loop Engineering.",
+    "lead": "El modelo propone; el código calcula; las pruebas contrastan; la persona decide.",
+    "cards": [],
+    "code": "1. Definir un objetivo y cómo comprobarlo\n2. Ejecutar un paso con herramientas\n3. Revisar el resultado y guardar el avance\n4. Elegir el siguiente paso con ese feedback\n5. Detenerse al cumplir, agotar límites o pedir ayuda",
+    "note": "[10:00–11:00] Loop Engineering es un término emergente, no una taxonomía universal. No significa simplemente repetir el mismo prompt: se diseña cómo un sistema encuentra o recibe trabajo, actúa, comprueba, conserva el estado y decide la siguiente acción. Addy Osmani lo describe como un sistema que coordina ciclos por encima del harness de un agente. En esta charla mostramos un ciclo pequeño y supervisado. Definir límites de tiempo, costos, intentos y permisos, y cuándo debe intervenir una persona. No dejar al agente iterando indefinidamente ni tomar sus propias afirmaciones como prueba. Una persona decide si la evidencia es suficiente.",
+    "kind": ""
+  },
+  {
+    "tag": "07 / MI MESA DE TRABAJO",
+    "title": "No cambio de profesión.<br>Cambio de ventanas.",
+    "lead": "Presentación ↔ IDE ↔ terminal ↔ navegador.",
+    "cards": [
+      [
+        "IDE",
+        "Leo el briefing, los datos y los cambios."
+      ],
+      [
+        "Terminal",
+        "pi coordina el trabajo con el modelo Codex seleccionado. Las pruebas se ejecutan aquí."
+      ],
+      [
+        "Navegador",
+        "Compruebo lo que usaría una persona."
+      ]
+    ],
+    "code": null,
+    "note": "[11:00–12:00] Cambiar de verdad al IDE y señalar las carpetas. Mostrar pi con el modelo Codex que tengas configurado; no describir pi y Codex como si fueran el mismo producto. Este paquete no configura la cuenta ni crea un sandbox. No proyectar credenciales, historial privado ni notificaciones.",
+    "kind": ""
+  },
+  {
+    "tag": "08 / NUESTRO ESCENARIO",
+    "title": "Bienvenidos a NexoBio.",
+    "lead": "Una empresa ficticia. Dos equipos. La misma responsabilidad.",
+    "cards": [
+      [
+        "Equipo comercial",
+        "¿Qué productos venden y cuáles aportan margen?"
+      ],
+      [
+        "Laboratorio",
+        "¿Podemos interpretar esta ejecución del ensayo?"
+      ],
+      [
+        "Datos sintéticos",
+        "Sin clientes, pacientes ni secretos empresariales."
+      ]
+    ],
+    "code": null,
+    "note": "[12:00–13:00] Todos los nombres y registros de las demos son inventados. Compartimos una historia para conectar las dos carreras, no para afirmar que los flujos representan todos los procesos de una empresa biotech.",
+    "kind": ""
+  },
+  {
+    "tag": "09 / DEMO SOFTWARE",
+    "title": "Vendemos más.<br>¿Ganamos más?",
+    "lead": "Un panel comercial para tomar una decisión, no para decorar una pantalla.",
+    "cards": [
+      [
+        "Entrada",
+        "24 registros sintéticos de pedidos, enero–abril de 2026."
+      ],
+      [
+        "Salida",
+        "Ingresos, margen, comparación por producto y filtro regional."
+      ],
+      [
+        "Pregunta",
+        "¿El producto líder en ventas también lidera en margen aportado?"
+      ]
+    ],
+    "code": null,
+    "note": "[13:00–14:00] Abrir /demos/ventas/. Decir explícitamente que este producto de referencia está preparado y que ahora lo inspeccionaremos y modificaremos. Pedir una predicción antes de mirar la tabla. No llamarlo ganancia neta.",
+    "kind": ""
+  },
+  {
+    "tag": "10 / LO QUE NECESITA SABER",
+    "title": "Los números también<br>tienen un contrato.",
+    "lead": "No dejemos que la IA invente qué significa «margen».",
+    "cards": [],
+    "code": "unidades netas = vendidas − devueltas\ningreso neto = unidades netas × precio\ncosto neto = unidades netas × costo\nmargen bruto = ingreso neto − costo neto\nmargen % = margen bruto / ingreso neto × 100",
+    "note": "[14:00–15:00] Abrir BRIEF.md. Señalar el supuesto de recuperación íntegra del costo de devoluciones y la ausencia de gastos generales. Una empresa real puede definirlo distinto. Mostrar por qué el porcentaje global es ponderado y no una media simple de porcentajes.",
+    "kind": ""
+  },
+  {
+    "tag": "11 / EN DIRECTO",
+    "title": "El producto tiene<br>que sobrevivir a una pregunta.",
+    "lead": "Abrimos datos → pedimos un cambio → ejecutamos pruebas → usamos el panel.",
+    "cards": [],
+    "code": "demos/ventas/BRIEF.md\ndemos/ventas/PROMPTS.md\nnode --test tests/ventas.test.mjs\nhttp://127.0.0.1:8000/demos/ventas/",
+    "note": "[15:00–20:00] Mostrar un registro de data.json y una prueba con números manuales. Copiar el prompt 2 en pi, sin leer todas sus líneas en voz alta. Mientras trabaja, explicar qué herramientas está usando. Después abrir el panel, cambiar región y contrastar la tabla. Si el agente tarda más de 90 segundos sin progreso visible, pasar al respaldo; no esperar en silencio. Las instrucciones por sí solas no son permisos técnicos.",
+    "kind": ""
+  },
+  {
+    "tag": "12 / USTEDES ELIGEN",
+    "title": "Un cambio chico.<br>Un resultado comprobable.",
+    "lead": "Elijan un desafío. Tiempo de trabajo en vivo: hasta 3 minutos.",
+    "cards": [
+      [
+        "A / Filtrar por mes",
+        "Combinar mes y región sin dejar indicadores desactualizados."
+      ],
+      [
+        "B / Alertar",
+        "Marcar margen inferior al 20% con texto, no solo color."
+      ],
+      [
+        "C / Su propuesta",
+        "Un cambio chico de visualización o filtro; sin nuevos servicios."
+      ]
+    ],
+    "code": null,
+    "note": "[20:00–25:00] Votar a mano alzada. Delimitar la petición antes de enviarla. Usar prompt 3 o alternativa. El agente debe ejecutar pruebas y reconocer qué revisión visual falta. Revisar personalmente que todos los indicadores cambian. Si propone algo fuera de alcance, anotarlo como siguiente iteración. No prometer que las pruebas existentes cubren cualquier cambio de UI.",
+    "kind": ""
+  },
+  {
+    "tag": "13 / QUÉ ACABAMOS DE MEDIR",
+    "title": "No contamos líneas de código.",
+    "lead": "Evaluamos el producto y el camino hasta él.",
+    "cards": [
+      [
+        "Tiempo",
+        "Desde la petición hasta un resultado revisado. No solo hasta la primera respuesta."
+      ],
+      [
+        "Calidad",
+        "Números correctos, flujo usable, requisitos cumplidos."
+      ],
+      [
+        "Límites",
+        "Qué comprobamos, qué no y quién aprueba."
+      ]
+    ],
+    "code": null,
+    "note": "[25:00–26:00] No presentar la demo como un benchmark ni inventar ahorros. Si se quiere medir, anotar el tiempo real y el alcance del cambio. El trabajo humano de preparar datos y criterios también cuenta.",
+    "kind": ""
+  },
+  {
+    "tag": "14 / DEMO BIOTECNOLOGÍA",
+    "title": "Una curva linda.<br>Un experimento no interpretable.",
+    "lead": "El control de calidad va antes que la conclusión.",
+    "cards": [
+      [
+        "Entrada",
+        "Blanco, control positivo y cuatro muestras en triplicado."
+      ],
+      [
+        "Salida",
+        "Media, CV, causas y estado global de la ejecución."
+      ],
+      [
+        "Pregunta",
+        "¿Basta con que una muestra tenga poca dispersión?"
+      ]
+    ],
+    "code": null,
+    "note": "[26:00–27:00] Abrir laboratorio. Definir triplicado y control en lenguaje cotidiano: repetir ayuda a estimar variabilidad; el control nos dice si el sistema se comporta como esperamos. No hace falta conocimiento de biología previo. Simulación educativa, no técnica validada.",
+    "kind": ""
+  },
+  {
+    "tag": "15 / PROTOCOLO ANTES QUE OPINIÓN",
+    "title": "Si falla el control,<br>no maquillamos la conclusión.",
+    "lead": "Las reglas de esta simulación son explícitas.",
+    "cards": [],
+    "code": "3 réplicas; ausente ≠ cero\nCV = desviación muestral / media × 100\nBlanco: media ≤ 0,10\nControl positivo: media entre 0,80 y 1,20\nCV de controles y muestras: ≤ 15%\nControl no conforme → ejecución NO INTERPRETABLE",
+    "note": "[27:00–29:00] Enseñar PROTOCOLO.md y protocolo.json. Explicar CV como variación relativa, sin derivar la fórmula. Los umbrales son inventados para enseñar el flujo y no deben aplicarse a un ensayo real. Diferenciar QC individual de estado global. M03 tiene un dato ausente, no un cero.",
+    "kind": ""
+  },
+  {
+    "tag": "16 / EN DIRECTO",
+    "title": "Primero la evidencia.<br>Después, si procede, interpretar.",
+    "lead": "El control positivo tiene media 0,62: está fuera del rango establecido.",
+    "cards": [],
+    "code": "demos/laboratorio/PROTOCOLO.md\ndemos/laboratorio/PROMPTS.md\nnode --test tests/laboratorio.test.mjs\nhttp://127.0.0.1:8000/demos/laboratorio/",
+    "note": "[29:00–34:00] Mostrar estado global, luego CONTROL+, luego M01 (QC individual conforme), M02 (CV alto) y M03 (réplica ausente). Copiar prompt 2. Descargar el informe y abrir el texto. Preguntar: ¿por qué M01 no autoriza una conclusión? Porque los controles globales no cumplen. No hacer inferencias sobre eficacia de tratamientos ni presencia de enfermedades.",
+    "kind": ""
+  },
+  {
+    "tag": "17 / DESAFÍO DEL LABORATORIO",
+    "title": "¿Y si hacemos el criterio<br>más estricto?",
+    "lead": "Comparar CV máximo de 15% y 10% como análisis de sensibilidad.",
+    "cards": [
+      [
+        "¿Qué creen que va a pasar?",
+        "¿Arreglará el control positivo bajar el límite de CV?"
+      ],
+      [
+        "Pedimos",
+        "Añadir comparación, sin cambiar datos ni protocolo original."
+      ],
+      [
+        "Comprobamos",
+        "El control sigue fuera de rango. La ejecución continúa bloqueada."
+      ]
+    ],
+    "code": null,
+    "note": "[34:00–39:00] Pedir predicción, lanzar prompt 3 y revisar ambos estados. Cambiar un umbral para explorar no significa aprobar un nuevo protocolo. Si no hay tiempo, usar la alternativa de destacar el dato ausente. Si el agente modifica datos para obtener verde, detenerlo: eso sería un fallo, no una solución.",
+    "kind": ""
+  },
+  {
+    "tag": "18 / MISMO MÉTODO, OTRO DOMINIO",
+    "title": "La IA no decide<br>qué significa «correcto».",
+    "lead": "Los criterios salen del problema y de las personas responsables.",
+    "cards": [
+      [
+        "Software",
+        "Indicadores definidos + pruebas + revisión de uso."
+      ],
+      [
+        "Biotecnología",
+        "Protocolo + QC + revisión científica."
+      ],
+      [
+        "En ambos",
+        "Contexto → herramientas → evidencia → decisión humana."
+      ]
+    ],
+    "code": null,
+    "note": "[39:00–41:00] El dominio cambia qué errores importan. Saber programar ayuda a construir y verificar; saber biotecnología ayuda a elegir controles e interpretar límites. No basta con operar una herramienta. La supervisión humana también puede fallar: necesita tiempo y evidencia.",
+    "kind": ""
+  },
+  {
+    "tag": "19 / LO QUE NO DELEGAMOS A CIEGAS",
+    "title": "Más capacidad.<br>También más responsabilidad.",
+    "lead": "Un agente con terminal puede hacer más cosas, incluidas cosas equivocadas.",
+    "cards": [
+      [
+        "Datos y privacidad",
+        "Solo información autorizada. Un archivo puede contener instrucciones maliciosas."
+      ],
+      [
+        "Acceso y acciones",
+        "Mínimo privilegio; confirmar envíos, borrados y operaciones externas."
+      ],
+      [
+        "Revisión y trazabilidad",
+        "Registrar cambios, conservar fuentes y pedir ayuda ante incertidumbre."
+      ]
+    ],
+    "code": null,
+    "note": "[41:00–43:00] Dar ejemplo de una celda que dice ignora el protocolo: es dato no fiable, no una nueva instrucción. Los prompts no aíslan el proceso. Este taller usa datos sintéticos y archivos locales, pero no configura aislamiento del sistema operativo. En producción hacen falta controles técnicos y políticas, no solo buenas intenciones. Referencia general: NIST AI RMF.",
+    "kind": ""
+  },
+  {
+    "tag": "20 / SU FUTURO",
+    "title": "Aprendan a plantear problemas.<br>Y a reconocer buenas soluciones.",
+    "lead": "Las herramientas cambian. Estas habilidades se acumulan.",
+    "cards": [
+      [
+        "Comprender",
+        "Usuarios, negocio, ciencia, datos y limitaciones."
+      ],
+      [
+        "Construir",
+        "Convertir una necesidad en un artefacto que se pueda usar."
+      ],
+      [
+        "Verificar",
+        "Diseñar pruebas, revisar evidencia y comunicar incertidumbre."
+      ]
+    ],
+    "code": null,
+    "note": "[43:00–45:00] No decir que aprender a programar o ciencias ya no importa. Al contrario: sin fundamentos es difícil saber qué aceptar. Proponer un primer proyecto: datos públicos o sintéticos, una pregunta concreta, un producto pequeño y tres comprobaciones.",
+    "kind": ""
+  },
+  {
+    "tag": "21 / PARA LLEVARSE",
+    "title": "No solo «hacé esto».<br>«Así sabremos si está bien».",
+    "lead": "Ese es el salto del prompt al sistema.",
+    "cards": [],
+    "code": "¿Qué resultado necesito?\n¿Qué contexto y herramientas hacen falta?\n¿Qué puede hacer sin permiso?\n¿Cómo detectamos errores?\n¿Quién revisa y decide?",
+    "note": "[45:00–46:00] Pedir que cada estudiante piense una tarea de su futura carrera y responda a estas cinco preguntas. Si vamos a 45 minutos, cerrar aquí y tomar preguntas breves; reducir previamente los retos en vivo, no eliminar las advertencias de laboratorio.",
+    "kind": ""
+  },
+  {
+    "tag": "22 / CONVERSACIÓN",
+    "title": "Ahora les toca preguntar.",
+    "lead": "¿Qué parte de su futuro trabajo les gustaría acelerar… y qué no delegarían?",
+    "cards": [
+      [
+        "Lo que vimos",
+        "Un panel comercial y un informe de QC."
+      ],
+      [
+        "Lo que importó",
+        "Contexto, herramientas, límites y comprobaciones."
+      ],
+      [
+        "Lo que sigue siendo humano",
+        "Elegir objetivos, asumir responsabilidad y decidir."
+      ]
+    ],
+    "code": null,
+    "note": "[46:00–55:00] Preguntas. Si preguntan por sustitución de empleos, distinguir automatización de tareas de predicciones de empleo: no afirmar certezas. Si preguntan por modelos, volver al criterio: elegir según tarea, costo, privacidad y capacidad de evaluación.",
+    "kind": ""
+  },
+  {
+    "tag": "23 / REFERENCIAS Y MATERIAL",
+    "title": "Fuentes para seguir.<br>Archivos para experimentar.",
+    "lead": "Material educativo independiente. Sin afiliación con OpenAI.",
+    "cards": [
+      [
+        "Harness engineering",
+        "OpenAI · openai.com/index/harness-engineering/"
+      ],
+      [
+        "Experiencia personal",
+        "Adriel Paredes · OpenShift AI / Red Hat · Workbenches / Notebooks"
+      ],
+      [
+        "Riesgos y evaluación",
+        "NIST AI RMF · nist.gov/itl/ai-risk-management-framework"
+      ]
+    ],
+    "code": null,
+    "note": "Diapositiva de consulta, fuera del tiempo principal. Los enlaces completos y el alcance de las fuentes están en fuentes.md. El artículo de OpenAI es una experiencia de su equipo, no una prueba universal de productividad. Los materiales y los prompts se encuentran en esta carpeta; consultar README.md. No hace falta conectarse para mostrar las diapositivas ni los respaldos.",
+    "kind": ""
+  }
+]

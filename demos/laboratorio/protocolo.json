@@ -1,0 +1,7 @@
+{
+  "blankMax": 0.1,
+  "positiveMin": 0.8,
+  "positiveMax": 1.2,
+  "cvMax": 15,
+  "replicates": 3
+}

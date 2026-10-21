@@ -1,0 +1,48 @@
+# Fuentes y alcance
+
+## 1. Harness engineering
+
+OpenAI, Ryan Lopopolo. **Harness engineering: leveraging Codex in an agent-first world** (11 de febrero de 2026).
+https://openai.com/index/harness-engineering/
+
+Respalda la discusión del entorno, las herramientas y el feedback alrededor del agente. Es una experiencia publicada por un equipo concreto; no demuestra que cualquier empresa obtenga los mismos resultados. No usamos sus cifras de código ni las extrapolamos a productividad. La página directa devolvió 403 durante la preparación; título, autor, fecha e introducción se contrastaron mediante resultados de búsqueda indexados. No se presenta como una revisión completa del artículo.
+
+## 2. Experiencia personal en OpenShift AI
+
+Testimonio de Adriel Paredes, aportado para esta charla: Ingeniero en Sistemas de Información, egresado de la UTN, y Senior Staff Engineer en OpenShift AI en Red Hat. Trabaja hace 15 años en Red Hat, casi toda su carrera profesional. Su área es Workbenches / Notebooks; diseña, revisa e implementa arquitectura de software para uno o varios equipos y analiza soluciones a largo plazo para el producto.
+
+Es una experiencia personal, no una declaración oficial de Red Hat ni una evaluación independiente del producto. No se atribuyen resultados cuantificados, experiencias específicas de uso de IA ni información interna no compartida por el presentador.
+
+## 3. Riesgos y responsabilidad
+
+NIST. **AI Risk Management Framework**.
+https://www.nist.gov/itl/ai-risk-management-framework
+
+Marco general para gestionar riesgos de IA. La página fue recuperada durante la preparación. Se cita como referencia para reflexión sobre riesgos, no como certificación de este material ni de las demos.
+
+## 4. Context Engineering y AI Agents
+
+Anthropic. **Effective context engineering for AI agents**.
+https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+
+Distingue redactar instrucciones de seleccionar y mantener el conjunto de información disponible durante la ejecución. Respalda la explicación de Context Engineering, no una cronología universal.
+
+Anthropic. **Building effective agents**.
+https://www.anthropic.com/engineering/building-effective-agents
+
+Distingue workflows con recorridos predefinidos de agentes que dirigen dinámicamente el uso de herramientas. AI Agents designa un tipo de sistema, no una disciplina equivalente a las otras etiquetas.
+
+## 5. Loop Engineering
+
+Addy Osmani. **Loop Engineering**.
+https://addyosmani.com/blog/loop-engineering/
+
+Describe sistemas que reciben o descubren trabajo, coordinan agentes, comprueban resultados y conservan estado para continuar. Sitúa este enfoque por encima del harness individual y advierte sobre costos, verificación y revisión humana. Es una perspectiva de un autor sobre una práctica emergente; el alcance del término no es universal.
+
+Las tres páginas de las secciones 4 y 5 se recuperaron al actualizar esta presentación. Se usan para explicar conceptos, no para respaldar promesas de productividad ni funcionalidades concretas de las herramientas de la demo. El mapa de términos de la diapositiva 4 representa una ampliación del foco, no una cronología fechada ni etapas que se reemplazan.
+
+## Qué es original y ficticio
+
+NexoBio, pedidos, productos, resultados, protocolo y umbrales son sintéticos y se han creado para esta sesión. No proceden de una empresa ni de un ensayo real. El protocolo no es un método científico validado. La presentación no hace afirmaciones diagnósticas ni promete mejoras cuantificadas de productividad.
+
+La estética está inspirada en interfaces de herramientas de IA; no es una presentación oficial de OpenAI, ChatGPT, Codex ni pi. Las capacidades y permisos de la instalación real dependen de su configuración.
