@@ -50,7 +50,7 @@ La exportación usa Google Chrome instalado en macOS, o un Chromium instalado pa
 
 | Ruta | Contenido |
 |---|---|
-| `presentacion/index.html` | 24 diapositivas, navegación, notas y estilo de impresión 16:9 |
+| `presentacion/index.html` | 25 diapositivas, navegación, notas, cierre con QR al repositorio y estilo de impresión 16:9 |
 | `presentacion/presentacion.pdf` | Mismas diapositivas, sin notas |
 | `GUION.md` | Texto de apoyo, tiempos y preguntas por diapositiva |
 | `DIRECTO.md` | Orden de ventanas, prompts, retos y plan de contingencia |

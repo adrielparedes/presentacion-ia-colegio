@@ -77,7 +77,7 @@ Node 24 recomendado, según `.nvmrc` y `package.json`. Next.js App Router, React
 
 ## Verificación proporcional al cambio
 - Cálculos estáticos: `npm test` en la raíz; agregar casos de comportamiento y límites.
-- Presentación: regenerar HTML/guion, `npm run pdf`, `node scripts/check.mjs`; revisar capturas. El verificador actual espera 24 diapositivas: si se cambia la cantidad, actualizar sus expectativas legítimamente.
+- Presentación: regenerar HTML/guion, `npm run pdf`, `node scripts/check.mjs`; revisar capturas. El verificador actual espera 25 diapositivas: si se cambia la cantidad, actualizar sus expectativas legítimamente.
 - UI de demos estáticas: pruebas de cálculo más flujos de navegador, no solo capturas.
 - Next.js: seguir `nexobio/AGENTS.md`, ejecutar check y build, revisar flujo en navegador. Los tests iniciales validan solo el scaffold; el agente tiene que crear los de dominio al implementar cada producto.
 - Documentación únicamente: comprobar coherencia de rutas y comandos; no afirmar haber ejecutado pruebas que no se corrieron.

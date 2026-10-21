@@ -97,3 +97,7 @@ Las notas también están en el HTML: tecla N (visibles para el público si proy
 ## 24 · Fuentes para seguir. Archivos para experimentar.
 
 Diapositiva de consulta, fuera del tiempo principal. Los enlaces completos y el alcance de las fuentes están en fuentes.md. El artículo de OpenAI es una experiencia de su equipo, no una prueba universal de productividad. Los materiales y los prompts se encuentran en esta carpeta; consultar README.md. No hace falta conectarse para mostrar las diapositivas ni los respaldos.
+
+## 25 · ¡Gracias!
+
+Cierre: dejar el QR visible para que puedan escanearlo. Repositorio público: https://github.com/adrielparedes/presentacion-ia-colegio. El QR es un recurso local; abrir GitHub requiere conexión a internet.

@@ -9,7 +9,7 @@ try{
  page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error'&&!m.text().includes('404'))errors.push(m.text())});
  page.on('request',r=>assert.ok(r.url().startsWith(server.url),'Dependencia externa: '+r.url()));
  await page.goto(server.url+'/presentacion/');
- assert.equal(await page.locator('.slide').count(),24);
+ assert.equal(await page.locator('.slide').count(),25);
  const contrast=await page.locator('.slide').evaluateAll(slides=>{
   const luminance=rgb=>rgb.slice(0,3).map(v=>{v/=255;return v<=0.04045?v/12.92:((v+0.055)/1.055)**2.4}).reduce((sum,v,i)=>sum+v*[0.2126,0.7152,0.0722][i],0);
   return slides.flatMap(slide=>[...slide.querySelectorAll('header,header span,.brand b,h1,.lead,article h3,article p,.card-num,code,footer')].map(el=>{
@@ -22,7 +22,7 @@ try{
  });
  assert.ok(contrast.every(c=>c.ratio>=7),'Contraste de texto inferior a 7:1: '+JSON.stringify(contrast.filter(c=>c.ratio<7)));
  assert.equal(await page.locator('.active').evaluate(s=>getComputedStyle(s).backgroundColor),'rgb(255, 255, 255)');
- results.push('Paleta clara: fondo blanco y contraste de texto mínimo de 7:1 en las 24 diapositivas');
+ results.push('Paleta clara: fondo blanco y contraste de texto mínimo de 7:1 en las 25 diapositivas');
  for(const term of ['Prompt Engineering','Context Engineering','AI Agents','Harness Engineering','Loop Engineering']){
   assert.ok((await page.locator('#s4').textContent()).includes(term),`Falta término para investigar: ${term}`);
  }
@@ -39,12 +39,14 @@ try{
  await page.screenshot({path:root+'verificacion/06-usos-ia.png'});
  await page.goto(server.url+'/presentacion/#6');
  await page.screenshot({path:root+'verificacion/02-harness.png'});
- await page.keyboard.press('End');assert.equal(await page.locator('.active').getAttribute('id'),'s24');
+ await page.keyboard.press('End');assert.equal(await page.locator('.active').getAttribute('id'),'s25');
  await page.keyboard.press('Home');assert.equal(await page.locator('.active').getAttribute('id'),'s1');
- results.push('24 diapositivas; navegación por teclas, URL, inicio/fin y notas correctas');
+ assert.equal(await page.locator('#s25 h1').textContent(),'¡Gracias!');
+ assert.equal(await page.locator('#s25 .repo-qr figcaption a').getAttribute('href'),'https://github.com/adrielparedes/presentacion-ia-colegio');
+ results.push('25 diapositivas; navegación por teclas, URL, inicio/fin y notas correctas');
  for(const viewport of [{width:1280,height:720},{width:1920,height:1080}]){
   await page.setViewportSize(viewport);
-  for(let i=1;i<=24;i++){
+  for(let i=1;i<=25;i++){
    await page.goto(server.url+'/presentacion/#'+i);
    const fit=await page.locator('.active').evaluate(s=>{const c=s.querySelector('.content').getBoundingClientRect(),f=s.querySelector('footer').getBoundingClientRect();return c.bottom<=f.top+1&&s.scrollWidth<=s.clientWidth});
    assert.ok(fit,`Desbordamiento diapositiva ${i} en ${viewport.width}`);
@@ -54,7 +56,7 @@ try{
  for(const [preset,width,height] of [['4k',3840,2160],['1080p',1920,1080],['720p',1280,720],['480p',854,480]]){
   await page.setViewportSize({width,height});
   await page.locator('#legibility').selectOption(preset);
-  for(let i=1;i<=24;i++){
+  for(let i=1;i<=25;i++){
    await page.goto(server.url+'/presentacion/#'+i);
    const fit=await page.locator('.active').evaluate(s=>{
     const c=s.querySelector('.content').getBoundingClientRect(),h=s.querySelector('header').getBoundingClientRect(),f=s.querySelector('footer').getBoundingClientRect();
@@ -62,6 +64,10 @@ try{
    });
    assert.ok(fit,`Desbordamiento ${preset}, diapositiva ${i}`);
    assert.equal(await page.locator('.active article:visible').count(),await page.locator('.active article').count());
+   if(i===25){
+    assert.ok(await page.locator('.repo-qr img').evaluate(img=>img.complete&&img.naturalWidth>0),'El QR debe cargar desde un recurso local');
+    await page.screenshot({path:root+`verificacion/08-gracias-${preset}.png`});
+   }
    if(preset==='480p')assert.ok(await page.locator('.active article').evaluateAll(cards=>cards.every((card,i)=>i===0||card.getBoundingClientRect().top>=cards[i-1].getBoundingClientRect().bottom)),'Las tarjetas deben apilarse verticalmente');
   }
  }
@@ -103,8 +109,8 @@ try{
  assert.equal(await page.locator('.slide').first().evaluate(s=>getComputedStyle(s).backgroundColor),'rgb(255, 255, 255)');
  const print=await page.locator('.slide').evaluateAll(ss=>ss.map((s,i)=>{const c=s.querySelector('.content').getBoundingClientRect(),f=s.querySelector('footer').getBoundingClientRect();return {slide:i+1,width:s.offsetWidth,height:s.offsetHeight,fit:c.bottom<=f.top+1}}));
  assert.ok(print.every(s=>s.fit),'Desbordamiento en modo impresión: '+JSON.stringify(print.filter(s=>!s.fit)));
- const pdf=readFileSync(root+'presentacion/presentacion.pdf');assert.equal([...pdf.toString('latin1').matchAll(/\/Type \/Page\b/g)].length,24);
- results.push('PDF: 24 páginas 16:9; contenido sin solapamientos en modo impresión');
+ const pdf=readFileSync(root+'presentacion/presentacion.pdf');assert.equal([...pdf.toString('latin1').matchAll(/\/Type \/Page\b/g)].length,25);
+ results.push('PDF: 25 páginas 16:9; contenido sin solapamientos en modo impresión');
  assert.deepEqual(errors,[]);
  writeFileSync(root+'verificacion/resultados.json',JSON.stringify({resultados:results,errores:errors},null,2));
  console.log(results.join('\n'));
