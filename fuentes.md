@@ -39,7 +39,14 @@ https://addyosmani.com/blog/loop-engineering/
 
 Describe sistemas que reciben o descubren trabajo, coordinan agentes, comprueban resultados y conservan estado para continuar. Sitúa este enfoque por encima del harness individual y advierte sobre costos, verificación y revisión humana. Es una perspectiva de un autor sobre una práctica emergente; el alcance del término no es universal.
 
-Las tres páginas de las secciones 4 y 5 se recuperaron al actualizar esta presentación. Se usan para explicar conceptos, no para respaldar promesas de productividad ni funcionalidades concretas de las herramientas de la demo. El mapa de términos de la diapositiva 4 representa una ampliación del foco, no una cronología fechada ni etapas que se reemplazan.
+Las tres páginas de las secciones 4 y 5 se recuperaron al actualizar esta presentación. Se usan para explicar conceptos, no para respaldar promesas de productividad ni funcionalidades concretas de las herramientas de la demo. El mapa de términos de la diapositiva 5 representa una ampliación del foco, no una cronología fechada ni etapas que se reemplazan.
+
+## 6. Introducción a IA y modelos de lenguaje
+
+Google Developers. **Introduction to Large Language Models**.
+https://developers.google.com/machine-learning/resources/intro-llms
+
+Página recuperada al agregar la introducción. Respalda la explicación de modelos de lenguaje, contexto y tokens (palabras, partes de palabras o caracteres), y tareas como generación, traducción y resumen. La diapositiva 2 distingue el campo amplio de la IA, los LLM como un tipo de modelo y una aplicación como ChatGPT que puede integrar modelos y herramientas. No toda IA es un LLM; generar una respuesta plausible no garantiza su veracidad ni implica consultar la web. La explicación oral es introductoria, no una descripción completa de entrenamiento, razonamiento o modelos multimodales.
 
 ## Qué es original y ficticio
 

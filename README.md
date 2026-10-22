@@ -25,7 +25,7 @@ Python 3 y Node.js 18+ necesarios. Las diapositivas pueden abrirse directamente 
 
 ## Antes de presentar: tu identidad
 
-Completá `presentacion/perfil.js` con tu nombre, rol y trayectoria. No inventamos información sobre vos. Revisá también la descripción del día a día de la diapositiva 2. Después regenerá el PDF:
+Completá `presentacion/perfil.js` con tu nombre, rol y trayectoria. No inventamos información sobre vos. Revisá también la descripción del día a día de la diapositiva 3. Después regenerá el PDF:
 
 ```bash
 npm install
@@ -50,7 +50,7 @@ La exportación usa Google Chrome instalado en macOS, o un Chromium instalado pa
 
 | Ruta | Contenido |
 |---|---|
-| `presentacion/index.html` | 25 diapositivas, navegación, notas, cierre con QR al repositorio y estilo de impresión 16:9 |
+| `presentacion/index.html` | 26 diapositivas, navegación, notas, cierre con QR al repositorio y estilo de impresión 16:9 |
 | `presentacion/presentacion.pdf` | Mismas diapositivas, sin notas |
 | `GUION.md` | Texto de apoyo, tiempos y preguntas por diapositiva |
 | `nexobio/DIRECTO.md` y `nexobio/PROMPTS.md` | Guía operativa y pedidos para construir desde cero |

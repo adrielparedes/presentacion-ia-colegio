@@ -4,6 +4,10 @@
 
 No solo pidas un resultado: definí cómo vas a saber si está bien.
 
+**IA (inteligencia artificial):** campo amplio que incluye sistemas para reconocer imágenes, recomendar contenido o generar texto; no toda IA es un modelo de lenguaje.
+**LLM (Large Language Model):** modelo de lenguaje de gran tamaño que aprende patrones y genera texto usando el contexto. Trabaja con tokens: palabras o partes de palabras, entre otras unidades. Puede producir errores aunque su respuesta suene convincente.
+**ChatGPT:** una aplicación que usa modelos de IA y puede integrar herramientas, como búsqueda web. La aplicación, el modelo y las herramientas no son lo mismo.
+
 **Prompt:** el pedido que le hacés al modelo.
 **Agente:** sistema que puede usar herramientas e iterar para completar una tarea.
 **Harness:** el entorno de ejecución y control que rodea al modelo: contexto, herramientas, permisos, comprobaciones y feedback. Una carpeta de instrucciones puede ser una parte, pero no equivale por sí sola a aislamiento de seguridad.

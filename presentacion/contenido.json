@@ -9,7 +9,29 @@
     "kind": "hero"
   },
   {
-    "tag": "01 / QUIÉN SOY",
+    "tag": "01 / IA Y LLM",
+    "title": "IA, LLM y ChatGPT.<br>No son lo mismo.",
+    "lead": "IA es el campo; un LLM es un tipo de modelo; ChatGPT es una aplicación.",
+    "cards": [
+      [
+        "IA / el campo",
+        "Inteligencia artificial: sistemas que realizan tareas como reconocer imágenes, recomendar contenido o generar texto."
+      ],
+      [
+        "LLM / un tipo de modelo",
+        "Large Language Model: modelo de lenguaje de gran tamaño. Aprende patrones del lenguaje y genera texto usando el contexto."
+      ],
+      [
+        "ChatGPT / una aplicación",
+        "Usa modelos de IA y puede sumar herramientas, como búsqueda web. La aplicación no es lo mismo que el modelo."
+      ]
+    ],
+    "code": null,
+    "note": "[1:00–2:00] Retomar las respuestas de la apertura: «¿Qué usaron: un chat, un generador de imágenes, una recomendación?». IA significa inteligencia artificial y abarca sistemas distintos. Cuando conversan con un asistente como ChatGPT, una pieza central es un LLM: Large Language Model, modelo de lenguaje de gran tamaño. Se entrena con muchos ejemplos y aprende patrones; al generar texto, estima qué tokens pueden seguir según el contexto. Un token puede ser una palabra o parte de ella. Esto permite resumir, explicar, programar y proponer alternativas, pero no garantiza verdad ni equivale a una búsqueda web. Una aplicación puede agregar búsqueda y otras herramientas; algunos modelos también procesan imágenes o audio. No afirmar que toda IA sea un LLM, que ChatGPT sea el nombre de un único modelo ni que el modelo consulte internet por sí solo en cada respuesta. Cerrar: «Hoy vamos a trabajar con estos modelos dentro de un sistema que nos ayude a comprobar sus propuestas». Fuente introductoria: Google Developers, Introduction to Large Language Models; enlace en fuentes.md.",
+    "kind": ""
+  },
+  {
+    "tag": "02 / QUIÉN SOY",
     "title": "Antes de empezar,<br>una persona detrás del teclado.",
     "lead": "<span data-profile=\"nombre\">[Tu nombre]</span> · <span data-profile=\"rol\">[Tu rol]</span>",
     "cards": [
@@ -27,11 +49,11 @@
       ]
     ],
     "code": null,
-    "note": "[1:00–3:00] La identidad y la experiencia se completan en perfil.js. Presentarse en 60–90 segundos: nombre, rol y recorrido. En Mi día a día, explicar el trabajo en Workbenches / Notebooks de OpenShift AI: diseñar, revisar e implementar arquitectura para uno o varios equipos, buscando soluciones a largo plazo. Toda esta información queda integrada acá, sin otra diapositiva biográfica. Distinguir trabajar en un producto de IA de usar IA para trabajar: no atribuirse usos, resultados ni cifras de productividad no confirmados. No es una declaración oficial de Red Hat. Cerrar con por qué te interesa mostrarles estas herramientas y pasar a qué significa usarlas en una empresa.",
+    "note": "[2:00–3:00] La identidad y la experiencia se completan en perfil.js. Presentarse en un minuto: nombre, rol y recorrido. En Mi día a día, explicar el trabajo en Workbenches / Notebooks de OpenShift AI: diseñar, revisar e implementar arquitectura para uno o varios equipos, buscando soluciones a largo plazo. Toda esta información queda integrada acá, sin otra diapositiva biográfica. Distinguir trabajar en un producto de IA de usar IA para trabajar: no atribuirse usos, resultados ni cifras de productividad no confirmados. No es una declaración oficial de Red Hat. Cerrar con por qué te interesa mostrarles estas herramientas y pasar a qué significa usarlas en una empresa.",
     "kind": ""
   },
   {
-    "tag": "02 / LA PREGUNTA",
+    "tag": "03 / LA PREGUNTA",
     "title": "¿Qué significa<br>«usar IA en una empresa»?",
     "lead": "No solo calcular: analizar información y explorar soluciones.",
     "cards": [
@@ -53,7 +75,7 @@
     "kind": ""
   },
   {
-    "tag": "03 / CÓMO CAMBIÓ EL FOCO",
+    "tag": "04 / CÓMO CAMBIÓ EL FOCO",
     "title": "Del pedido al sistema<br>que trabaja y se comprueba.",
     "lead": "Cinco términos para investigar. Se combinan; no se reemplazan.",
     "cards": [],
@@ -62,7 +84,7 @@
     "kind": ""
   },
   {
-    "tag": "04 / PROMPT ENGINEERING",
+    "tag": "05 / PROMPT ENGINEERING",
     "title": "Prompt Engineering.",
     "lead": "Objetivo + contexto + formato + restricciones.",
     "cards": [],
@@ -71,7 +93,7 @@
     "kind": ""
   },
   {
-    "tag": "05 / HARNESS ENGINEERING",
+    "tag": "06 / HARNESS ENGINEERING",
     "title": "Harness Engineering.",
     "lead": "Combinar propuestas probabilísticas con cálculos y comprobaciones deterministas.",
     "cards": [
@@ -93,7 +115,7 @@
     "kind": ""
   },
   {
-    "tag": "06 / LOOP ENGINEERING",
+    "tag": "07 / LOOP ENGINEERING",
     "title": "Loop Engineering.",
     "lead": "El modelo propone; el código calcula; las pruebas contrastan; la persona decide.",
     "cards": [],
@@ -102,7 +124,7 @@
     "kind": ""
   },
   {
-    "tag": "07 / MI MESA DE TRABAJO",
+    "tag": "08 / MI MESA DE TRABAJO",
     "title": "No cambio de profesión.<br>Cambio de ventanas.",
     "lead": "Presentación ↔ IDE ↔ terminal ↔ navegador.",
     "cards": [
@@ -124,7 +146,7 @@
     "kind": ""
   },
   {
-    "tag": "08 / NUESTRO ESCENARIO",
+    "tag": "09 / NUESTRO ESCENARIO",
     "title": "Bienvenidos a NexoBio.",
     "lead": "Una empresa ficticia. Dos equipos. La misma responsabilidad.",
     "cards": [
@@ -146,7 +168,7 @@
     "kind": ""
   },
   {
-    "tag": "09 / DEMO SOFTWARE",
+    "tag": "10 / DEMO SOFTWARE",
     "title": "Vendemos más.<br>¿Ganamos más?",
     "lead": "Un panel comercial para tomar una decisión, no para decorar una pantalla.",
     "cards": [
@@ -168,7 +190,7 @@
     "kind": ""
   },
   {
-    "tag": "10 / LO QUE NECESITA SABER",
+    "tag": "11 / LO QUE NECESITA SABER",
     "title": "Los números también<br>tienen un contrato.",
     "lead": "No dejemos que la IA invente qué significa «margen».",
     "cards": [],
@@ -177,7 +199,7 @@
     "kind": ""
   },
   {
-    "tag": "11 / EN DIRECTO",
+    "tag": "12 / EN DIRECTO",
     "title": "El producto tiene<br>que sobrevivir a una pregunta.",
     "lead": "Mostramos la spec → construimos → comprobamos → usamos el panel.",
     "cards": [],
@@ -186,7 +208,7 @@
     "kind": ""
   },
   {
-    "tag": "12 / USTEDES ELIGEN",
+    "tag": "13 / USTEDES ELIGEN",
     "title": "Un cambio chico.<br>Un resultado comprobable.",
     "lead": "Opcional: elijan un desafío. Hasta 3 minutos si el mínimo ya funciona.",
     "cards": [
@@ -208,7 +230,7 @@
     "kind": ""
   },
   {
-    "tag": "13 / QUÉ ACABAMOS DE MEDIR",
+    "tag": "14 / QUÉ ACABAMOS DE MEDIR",
     "title": "No contamos líneas de código.",
     "lead": "Evaluamos el producto y el camino hasta él.",
     "cards": [
@@ -230,7 +252,7 @@
     "kind": ""
   },
   {
-    "tag": "14 / DEMO BIOTECNOLOGÍA",
+    "tag": "15 / DEMO BIOTECNOLOGÍA",
     "title": "Una curva linda.<br>Un experimento no interpretable.",
     "lead": "El control de calidad va antes que la conclusión.",
     "cards": [
@@ -252,7 +274,7 @@
     "kind": ""
   },
   {
-    "tag": "15 / PROTOCOLO ANTES QUE OPINIÓN",
+    "tag": "16 / PROTOCOLO ANTES QUE OPINIÓN",
     "title": "Si falla el control,<br>no maquillamos la conclusión.",
     "lead": "Las reglas de esta simulación son explícitas.",
     "cards": [],
@@ -261,7 +283,7 @@
     "kind": ""
   },
   {
-    "tag": "16 / EN DIRECTO",
+    "tag": "17 / EN DIRECTO",
     "title": "Primero la evidencia.<br>Después, si procede, interpretar.",
     "lead": "El control positivo tiene media 0,62: está fuera del rango establecido.",
     "cards": [],
@@ -270,7 +292,7 @@
     "kind": ""
   },
   {
-    "tag": "17 / DESAFÍO DEL LABORATORIO",
+    "tag": "18 / DESAFÍO DEL LABORATORIO",
     "title": "¿Y si hacemos el criterio<br>más estricto?",
     "lead": "Opcional: comparar CV máximo de 15% y 10% como análisis de sensibilidad.",
     "cards": [
@@ -292,7 +314,7 @@
     "kind": ""
   },
   {
-    "tag": "18 / MISMO MÉTODO, OTRO DOMINIO",
+    "tag": "19 / MISMO MÉTODO, OTRO DOMINIO",
     "title": "La IA no decide<br>qué significa «correcto».",
     "lead": "Los criterios salen del problema y de las personas responsables.",
     "cards": [
@@ -314,7 +336,7 @@
     "kind": ""
   },
   {
-    "tag": "19 / LO QUE NO DELEGAMOS A CIEGAS",
+    "tag": "20 / LO QUE NO DELEGAMOS A CIEGAS",
     "title": "Más capacidad.<br>También más responsabilidad.",
     "lead": "Un agente con terminal puede hacer más cosas, incluidas cosas equivocadas.",
     "cards": [
@@ -336,7 +358,7 @@
     "kind": ""
   },
   {
-    "tag": "20 / SU FUTURO",
+    "tag": "21 / SU FUTURO",
     "title": "Aprendan a plantear problemas.<br>Y a reconocer buenas soluciones.",
     "lead": "Las herramientas cambian. Estas habilidades se acumulan.",
     "cards": [
@@ -358,7 +380,7 @@
     "kind": ""
   },
   {
-    "tag": "21 / PARA LLEVARSE",
+    "tag": "22 / PARA LLEVARSE",
     "title": "No solo «hacé esto».<br>«Así sabremos si está bien».",
     "lead": "Ese es el salto del prompt al sistema.",
     "cards": [],
@@ -367,7 +389,7 @@
     "kind": ""
   },
   {
-    "tag": "22 / CONVERSACIÓN",
+    "tag": "23 / CONVERSACIÓN",
     "title": "Ahora les toca preguntar.",
     "lead": "¿Qué parte de su futuro trabajo les gustaría acelerar… y qué no delegarían?",
     "cards": [
@@ -389,7 +411,7 @@
     "kind": ""
   },
   {
-    "tag": "23 / REFERENCIAS Y MATERIAL",
+    "tag": "24 / REFERENCIAS Y MATERIAL",
     "title": "Fuentes para seguir.<br>Archivos para experimentar.",
     "lead": "Material educativo independiente. Sin afiliación con OpenAI.",
     "cards": [
@@ -411,7 +433,7 @@
     "kind": ""
   },
   {
-    "tag": "24 / GRACIAS",
+    "tag": "25 / GRACIAS",
     "title": "¡Gracias!",
     "lead": "Escaneá el QR para llevarte la presentación, el código y las demos.",
     "cards": [],
