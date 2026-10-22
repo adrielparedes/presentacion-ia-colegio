@@ -36,6 +36,9 @@ try{
  const guion=readFileSync(root+'GUION.md','utf8');
  assert.ok(guion.includes('## Antes de que llegue el público')&&guion.includes('## Recorrido de 55 minutos')&&guion.includes('## Notas por diapositiva'));
  results.push('Guion desde cero: specs, prompts 1/3, rutas 3000 y comprobaciones de nexobio coherentes');
+ const references=page.locator('#s25 .cards');
+ assert.equal(await references.getByRole('link',{name:'Harness design for long-running application development',includeHidden:true}).getAttribute('href'),'https://www.anthropic.com/engineering/harness-design-long-running-apps');
+ assert.doesNotMatch(await references.textContent(),/Experiencia personal|Adriel Paredes|OpenShift AI/);
  await page.screenshot({path:root+'verificacion/01-portada.png'});
  await page.keyboard.press('ArrowRight');assert.equal(await page.locator('.active').getAttribute('id'),'s2');
  assert.equal(await page.locator('#s2 h1').textContent(),'IA, LLM y ChatGPT.No son lo mismo.');
@@ -55,6 +58,8 @@ try{
  await page.screenshot({path:root+'verificacion/09-ventas-desde-cero.png'});
  await page.goto(server.url+'/presentacion/#18');
  await page.screenshot({path:root+'verificacion/10-laboratorio-desde-cero.png'});
+ await page.goto(server.url+'/presentacion/#25');
+ await page.screenshot({path:root+'verificacion/12-fuentes.png'});
  await page.goto(server.url+'/presentacion/#7');
  await page.screenshot({path:root+'verificacion/02-harness.png'});
  await page.keyboard.press('End');assert.equal(await page.locator('.active').getAttribute('id'),'s26');
@@ -82,6 +87,7 @@ try{
    });
    assert.ok(fit,`Desbordamiento ${preset}, diapositiva ${i}`);
    assert.equal(await page.locator('.active article:visible').count(),await page.locator('.active article').count());
+   if(i===25&&preset==='480p')await page.screenshot({path:root+'verificacion/12-fuentes-480p.png'});
    if(i===2&&preset==='480p')await page.screenshot({path:root+'verificacion/11-ia-llm-480p.png'});
    if(i===26){
     assert.ok(await page.locator('.repo-qr img').evaluate(img=>img.complete&&img.naturalWidth>0),'El QR debe cargar desde un recurso local');

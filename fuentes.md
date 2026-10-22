@@ -7,11 +7,19 @@ https://openai.com/index/harness-engineering/
 
 Respalda la discusión del entorno, las herramientas y el feedback alrededor del agente. Es una experiencia publicada por un equipo concreto; no demuestra que cualquier empresa obtenga los mismos resultados. No usamos sus cifras de código ni las extrapolamos a productividad. La página directa devolvió 403 durante la preparación; título, autor, fecha e introducción se contrastaron mediante resultados de búsqueda indexados. No se presenta como una revisión completa del artículo.
 
-## 2. Experiencia personal en OpenShift AI
+## 2. Harnesses y ciclos de trabajo · Anthropic
 
-Testimonio de Adriel Paredes, aportado para esta charla: Ingeniero en Sistemas de Información, egresado de la UTN, y Senior Staff Engineer en OpenShift AI en Red Hat. Trabaja hace 15 años en Red Hat, casi toda su carrera profesional. Su área es Workbenches / Notebooks; diseña, revisa e implementa arquitectura de software para uno o varios equipos y analiza soluciones a largo plazo para el producto.
+Anthropic. **Harness design for long-running application development**.
+https://www.anthropic.com/engineering/harness-design-long-running-apps
 
-Es una experiencia personal, no una declaración oficial de Red Hat ni una evaluación independiente del producto. No se atribuyen resultados cuantificados, experiencias específicas de uso de IA ni información interna no compartida por el presentador.
+Lectura destacada en la diapositiva de fuentes. Describe una arquitectura con planificación, generación y evaluación, ciclos de feedback y artefactos estructurados para conservar contexto entre sesiones. Advierte sobre la autoevaluación indulgente y explica la separación entre quien genera y quien evalúa. Un evaluador basado en otro LLM sigue siendo falible: no reemplaza comprobaciones deterministas ni revisión humana. Los resultados corresponden a sus experimentos y no garantizan calidad, autonomía o productividad en otros proyectos.
+
+Anthropic. **Effective harnesses for long-running agents**.
+https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+
+Lectura previa y complementaria: preparación inicial, avances incrementales y registro del progreso para que una sesión pueda continuar el trabajo de otra. Respalda la importancia del entorno, la continuidad y las comprobaciones, no dejar un agente repitiendo un prompt indefinidamente.
+
+Ambas páginas se recuperaron al actualizar las referencias. Se usan para explicar harnesses y ciclos prácticos; no se atribuye a Anthropic el término «Loop Engineering», cuya referencia específica está en la sección 5.
 
 ## 3. Riesgos y responsabilidad
 

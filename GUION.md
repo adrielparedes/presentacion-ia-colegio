@@ -155,7 +155,7 @@ Pestañas: `http://127.0.0.1:8000/presentacion/`, `http://127.0.0.1:3000`, `http
 
 ## 25 · Fuentes para seguir. Archivos para experimentar.
 
-[54:00–54:30] Mostrar brevemente como material de consulta, sin leer los enlaces en voz alta. Los enlaces completos y el alcance de las fuentes están en fuentes.md. El artículo de OpenAI es una experiencia de su equipo, no una prueba universal de productividad. Los materiales y los prompts se encuentran en esta carpeta; consultar README.md. No hace falta conectarse para mostrar las diapositivas ni los respaldos.
+[54:00–54:30] Mostrar brevemente como material de consulta, sin leer los enlaces en voz alta. Los enlaces completos y el alcance de las fuentes están en fuentes.md. Destacar la lectura de Anthropic sobre harnesses para desarrollo de aplicaciones: planificar, generar, evaluar y usar feedback en la siguiente iteración, conservando el contexto entre sesiones. Su artículo previo, Effective harnesses for long-running agents, también está en fuentes.md. No atribuir a Anthropic el término Loop Engineering: la referencia para ese nombre sigue siendo Addy Osmani. Un evaluador basado en otro LLM también puede equivocarse; no sustituye pruebas ni revisión humana. Los artículos de OpenAI y Anthropic describen experiencias de sus equipos, no pruebas universales de productividad. Los materiales y los prompts se encuentran en esta carpeta; consultar README.md. No hace falta conectarse para mostrar las diapositivas ni los respaldos.
 
 ## 26 · ¡Gracias!
 
