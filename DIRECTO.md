@@ -1,4 +1,6 @@
-# Hoja de ruta del directo
+# Hoja de ruta del directo · Modalidad anterior
+
+> Esta guía conserva el flujo de modificación de demos estáticas preparadas. Para construir desde cero en la charla actual, usá [`GUION.md`](GUION.md), [`nexobio/DIRECTO.md`](nexobio/DIRECTO.md) y [`nexobio/PROMPTS.md`](nexobio/PROMPTS.md).
 
 ## Ventanas preparadas
 1. Navegador con presentación y dos demos, más pestañas de respaldo.

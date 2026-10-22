@@ -37,5 +37,5 @@ Mostrar que /laboratorio todavía no existe antes de iniciar. Abrir protocolo y 
 - Si intenta leer/copiar ../demos o ../respaldo, detenerlo y recordar el alcance.
 - Si pide instalar paquetes o conectarse a servicios, revisar: ya están las dependencias del alcance acordado.
 
-## Ajustes al guion original
-Donde el guion anterior decía «producto de referencia preparado», acá mostrar el lienzo inicial y la construcción real. Los conceptos, datos y resultados esperados se conservan. Las rutas pasan de `:8000/demos/ventas/` y `:8000/demos/laboratorio/` a `:3000/ventas` y `:3000/laboratorio` cuando el agente las cree. Las pruebas se ejecutan con `npm test` dentro de nexobio: el agente tiene que escribir las de negocio.
+## Guion y rutas
+El recorrido actualizado está en `../GUION.md`: preparación y notas por diapositiva para construir desde cero. `../DIRECTO.md` conserva la modalidad anterior. Los productos en vivo se abren en `:3000/ventas` y `:3000/laboratorio` cuando el agente los cree; los respaldos preparados se sirven en `:8000/respaldo/ventas/` y `:8000/respaldo/laboratorio/`. El agente tiene que escribir las pruebas de negocio y ejecutar `npm run check` y `npm run build` dentro de nexobio.

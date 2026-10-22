@@ -4,7 +4,7 @@ Presentación en español argentino (es-AR), con voseo, para estudiantes de unos
 
 ## Construir las demos desde cero en vivo
 
-El scaffold nuevo está en **[`nexobio/`](nexobio/README.md)**: Next.js con dependencias instaladas, estilo base, datos sintéticos, `AGENTS.md` y `specs/`, sin las demos implementadas. Desde esa carpeta: `npm run dev`. Seguí `nexobio/PROMPTS.md` y `nexobio/DIRECTO.md` para generarlas durante la charla. Las demos estáticas de abajo se conservan como respaldo; el guion original describe la modalidad anterior, de modificación de productos preparados.
+El scaffold nuevo está en **[`nexobio/`](nexobio/README.md)**: Next.js con dependencias instaladas, estilo base, datos sintéticos, `AGENTS.md` y `specs/`, sin las demos implementadas. Desde esa carpeta: `npm run dev`. Seguí `nexobio/PROMPTS.md` y `nexobio/DIRECTO.md` para generarlas durante la charla. Las demos estáticas de abajo se conservan como respaldo. `GUION.md` contiene el recorrido actualizado: preparación, construcción desde cero, comprobaciones, contingencias y notas por diapositiva.
 
 ## Abrir ahora
 
@@ -53,7 +53,8 @@ La exportación usa Google Chrome instalado en macOS, o un Chromium instalado pa
 | `presentacion/index.html` | 25 diapositivas, navegación, notas, cierre con QR al repositorio y estilo de impresión 16:9 |
 | `presentacion/presentacion.pdf` | Mismas diapositivas, sin notas |
 | `GUION.md` | Texto de apoyo, tiempos y preguntas por diapositiva |
-| `DIRECTO.md` | Orden de ventanas, prompts, retos y plan de contingencia |
+| `nexobio/DIRECTO.md` y `nexobio/PROMPTS.md` | Guía operativa y pedidos para construir desde cero |
+| `DIRECTO.md` | Modalidad anterior: modificar demos estáticas preparadas |
 | `ALUMNOS.md` | Resumen y pequeño reto para después de la sesión |
 | `fuentes.md` | Referencias y límites de las afirmaciones |
 | `demos/*/PROMPTS.md` | Prompts para copiar en pi |
@@ -65,7 +66,7 @@ La exportación usa Google Chrome instalado en macOS, o un Chromium instalado pa
 
 ## Enfoque de las demos
 
-No fingir que los productos se han construido desde cero en vivo: son puntos de partida preparados. El público elige un cambio, vos lo delimitás, pi con Codex lo implementa y se revisa su resultado en terminal y navegador. Los prompts incluyen alternativas más cortas.
+Construir ambos mínimos en vivo dentro de `nexobio/`, partiendo de la portada neutra y usando sus specs y prompts. Las herramientas, los datos y el estilo están preparados; los productos y sus pruebas de dominio se generan durante la charla. El público puede elegir un desafío después de comprobar el mínimo, solo si hay tiempo. Si se usa una demo estática de respaldo, identificarla como versión preparada, no como resultado de ese intento.
 
 Una petición vaga no está obligada a fallar. Si el agente hace buenas preguntas, señalarlo como una conducta positiva. El contraste es la evidencia disponible, no un truco para hacer quedar mal al modelo.
 
@@ -81,11 +82,12 @@ npm run pdf               # exportación y comprobación de maquetación
 
 Editar texto y notas en `scripts/build_slides.py`, ejecutar `python3 scripts/build_slides.py` y volver a exportar. `presentacion/contenido.json` es un índice generado, no la fuente de edición. `perfil.js` se conserva.
 
-Las demos se editan directamente en `demos/`. Los scripts `build_demos.py` y `build_views.py` son generadores de origen: **no volver a ejecutarlos para iniciar la charla**, porque regeneran datos y vistas y sustituyen las copias de respaldo. No ejecutarlos después de un reto sin guardar antes los cambios que se quieran conservar.
+Los productos en vivo se construyen dentro de `nexobio/` y se verifican ahí con `npm run check` y `npm run build`. Los comandos de pruebas de la raíz verifican las demos estáticas, no las implementaciones nuevas. Si se pide modificar las demos estáticas, se editan directamente en `demos/`. Los scripts `build_demos.py` y `build_views.py` son generadores de origen: **no volver a ejecutarlos para iniciar la charla**, porque regeneran datos y vistas y sustituyen las copias de respaldo. No ejecutarlos después de un reto sin guardar antes los cambios que se quieran conservar.
 
 ## Ajustar la duración
 
-- **45 minutos:** introducción 10, software 10, laboratorio 10, síntesis 5 y preguntas 10. Elegir solo un reto en vivo; mostrar el resultado del otro.
-- **55–60 minutos:** seguir `GUION.md`, con ambos retos acotados y 9–14 minutos de preguntas.
+- **45 minutos:** introducción 10, software 10, laboratorio 10, síntesis 5 y preguntas/cierre 10. Omitir ambos retos; conservar las comprobaciones y los límites de laboratorio.
+- **55 minutos:** seguir `GUION.md`: introducción 12, ventas 14, laboratorio 14, síntesis 5 y preguntas/cierre 10. Los retos son opcionales.
+- **60 minutos:** usar los 5 minutos adicionales para preguntas o revisión, sin ampliar el alcance por obligación.
 
 No afirmar porcentajes de productividad a partir de esta demostración. Si se mide tiempo, incluir preparación, revisión y correcciones, y describir exactamente qué tarea se ha medido.

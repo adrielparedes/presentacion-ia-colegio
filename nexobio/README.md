@@ -56,7 +56,7 @@ Node 24 recomendado (`.nvmrc`); Node 22.12+ compatible con el tooling actual. `p
 
 Las demos estáticas de `../demos/` y `../respaldo/` quedan intactas para el presentador. No son fuentes que el agente deba copiar. Se sirven por separado desde la carpeta padre con `npm start` en puerto 8000. Si el agente falla o se demora, abrí esas demos y aclarale al público que estás mostrando una versión preparada.
 
-`DIRECTO.md` de esta carpeta describe la modalidad nueva. El guion original de la carpeta padre incluye pasajes pensados para modificar productos ya preparados: no leer esas frases como si describieran este scaffold.
+`DIRECTO.md` de esta carpeta y `../GUION.md` describen la construcción desde cero. `../DIRECTO.md` conserva la modalidad anterior de modificación de productos preparados: no usar ese flujo para presentar este scaffold.
 
 ## Seguridad y regreso al punto inicial
 

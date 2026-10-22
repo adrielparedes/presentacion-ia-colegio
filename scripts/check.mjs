@@ -27,6 +27,15 @@ try{
   assert.ok((await page.locator('#s4').textContent()).includes(term),`Falta término para investigar: ${term}`);
  }
  assert.equal(await page.locator('#s7 h1').textContent(),'Loop Engineering.');
+ for(const [id,spec,prompt,route] of [['s12','02-ventas.md','prompt 1','/ventas'],['s17','03-laboratorio.md','prompt 3','/laboratorio']]){
+  const code=await page.locator(`#${id} code`).textContent();
+  assert.ok(code.includes(`nexobio/specs/${spec}`)&&code.includes(prompt)&&code.includes(`http://127.0.0.1:3000${route}`),'Contrato de construcción en vivo incorrecto: '+id);
+  assert.ok(code.includes('npm run check && npm run build'));
+  assert.ok(!code.includes('demos/')&&!code.includes('node --test'),'No mezclar comprobaciones estáticas con la construcción en vivo');
+ }
+ const guion=readFileSync(root+'GUION.md','utf8');
+ assert.ok(guion.includes('## Antes de que llegue el público')&&guion.includes('## Recorrido de 55 minutos')&&guion.includes('## Notas por diapositiva'));
+ results.push('Guion desde cero: specs, prompts 1/3, rutas 3000 y comprobaciones de nexobio coherentes');
  await page.screenshot({path:root+'verificacion/01-portada.png'});
  await page.keyboard.press('ArrowRight');assert.equal(await page.locator('.active').getAttribute('id'),'s2');
  for(const field of ['nombre','rol','trayectoria','diaADia']){
@@ -37,6 +46,10 @@ try{
  await page.keyboard.press('Escape');assert.equal(await page.locator('.active .notes').isVisible(),false);
  await page.goto(server.url+'/presentacion/#3');
  await page.screenshot({path:root+'verificacion/06-usos-ia.png'});
+ await page.goto(server.url+'/presentacion/#12');
+ await page.screenshot({path:root+'verificacion/09-ventas-desde-cero.png'});
+ await page.goto(server.url+'/presentacion/#17');
+ await page.screenshot({path:root+'verificacion/10-laboratorio-desde-cero.png'});
  await page.goto(server.url+'/presentacion/#6');
  await page.screenshot({path:root+'verificacion/02-harness.png'});
  await page.keyboard.press('End');assert.equal(await page.locator('.active').getAttribute('id'),'s25');

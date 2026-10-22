@@ -40,7 +40,7 @@ El usuario va a dar esta charla **tres veces**. Para cada presentación va a cre
 - `verificacion/`: capturas e informes de comprobaciones; son evidencia histórica, no garantía de que cambios posteriores estén verificados.
 - `nexobio/`: app Next.js independiente, con su propio package.json, lockfile, herramientas, datos, specs y guía de construcción en vivo.
 
-**Desfase conocido:** el guion y algunas diapositivas todavía describen la modalidad anterior (modificar productos preparados). Para la modalidad nueva, la guía es `nexobio/DIRECTO.md` y los pedidos están en `nexobio/PROMPTS.md`. Si se pide actualizar la presentación, alineá fuentes, HTML, notas y PDF; no describas un respaldo como generado en vivo.
+**Guías de la modalidad actual:** `GUION.md` y las diapositivas describen la construcción desde cero; la guía operativa es `nexobio/DIRECTO.md` y los pedidos están en `nexobio/PROMPTS.md`. `DIRECTO.md` de la raíz conserva la modalidad anterior, de modificación de demos estáticas. Si se pide actualizar la presentación, alineá fuentes, HTML, notas y PDF; no describas un respaldo como generado en vivo.
 
 ## Comandos y directorios de trabajo
 
